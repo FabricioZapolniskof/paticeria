@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: burlywood;
+}
+.barra a{
+    color: beige;
+    text-decoration: none;
+}
+.tutos{
+    text-align: center;
+}
+.video1{
+    width: 560px; 
+    height: 315px;
+}
+.video2{
+    width: 560px; 
+    height: 315px;
+}
+/* CELULAR */
+@media only screen and (min-width:320px){
+    header{
+        background-color: black;
+        width: 100%;
+        
+    }
+    h1{
+        text-align: left;
+        color: beige;
+        font-size: 50px;
+        letter-spacing: 5px;
+        margin: 5px;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        font-size: 20px;
+        background-color: black;
+    }
+    .texto1 img{
+        height: auto;
+        width: 310px;
+        margin: 10px;
+    }
+    .texto2 img{
+        height: auto;
+        width: 310px;
+        margin: 10px;
+    }
+    footer{
+        text-align: center;
+        background-color: black;
+        color: beige;
+        font-size: 40px;
+        padding: 20px;
+        margin-top: auto;
+    }
+    .hambh2{
+        text-align: center;
+    }
+    .hamb{
+        text-align: center;
+
+    }
+    .hamb img{
+        height: 250px;
+        width: auto;
+    }
+    .video1{
+        width: 300px; 
+        height: auto;
+    }
+    .video2{
+        width: 300px; 
+        height: auto;
+    }
+    .titulohamburgeseria h2{
+        text-align: center;
+    }
+    .mapbur p{
+        font-size: 20px;
+    }
+    .mapbur{
+        text-align: center;
+    }
+    .cont{
+        text-align: center;
+    }
+    input{
+        transition: all 2s;
+    }
+    input:focus{
+        font-size: 20px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width:768px){
+    header{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1{
+        color: beige;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-flex;
+        font-size: 20px;
+        background-color: black;
+    }
+    .textos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        text-align: center;
+    }
+    .texto1 img{
+        height: auto;
+        width: 310px;
+        margin: 10px;
+        justify-content: center;
+    }
+    .texto2 img{
+        height: auto;
+        width: 250px;
+        margin: 10px;
+        
+    }
+    footer{
+        text-align: center;
+        background-color: black;
+        color: beige;
+        font-size: 40px;
+        padding: 20px;
+    
+    }
+    .hambh2{
+        text-align: center;
+    }
+    .hamb{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .titulohamburgeseria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapbur{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+}
+/* COMPU */
+
+@media only screen and (min-width:1024px){
+    .hambh2{
+        text-align: center;
+    }
+    .hamb{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .tutos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
